@@ -1,0 +1,33 @@
+$brand-color1: #213260; 
+$brand-color2: #74b4c5; 
+$brand-color3: #4498aa; 
+$brand-color4: #90c2d0;
+
+$very-light-gray: #F2F8F9;
+$med-light-gray: #e9f2f5;
+$light-gray: #d3e6eb;
+$light-gray-blue: #a8cdd8;
+
+$brand-error: #4498aa;
+$brand-sucess: #1E8349;
+$brand-danger: #AD382E;
+
+$text-font: 'Montserrat', sans-serif;
+$h1-font: 'nickainleynormal';
+$heading-font: 'Museo_Slab_500_2';
+
+$fixed-nav-width: 50px;
+
+$section-padding-desktop: 4.5em;
+$section-padding-mobile: 2.5em;
+
+$dashed-border-2px: 2px dashed lighten($light-gray-blue, 8%);
+
+$grid-breakpoints: (
+    xs : 0,
+    sm : 576px,
+    md : 768px,
+    lg : 992px,
+    xl : 1200px,
+    xxl: 1920px
+);

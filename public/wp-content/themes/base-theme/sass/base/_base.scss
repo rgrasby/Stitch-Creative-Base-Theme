@@ -1,0 +1,146 @@
+a {
+    color: $brand-color3;
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+        outline: 0;
+    }
+}
+
+.site{
+    margin: auto;
+    background: white;
+}
+
+.page{
+    overflow-x: hidden;
+}
+
+.container-full{
+    @include media-breakpoint-up(sm) {
+        padding-left: $fixed-nav-width;
+    }
+}
+
+.container-fluid{
+    max-width: 1300px;
+    @include media-breakpoint-up(sm) {
+        padding-left: 80px ;
+    }
+}
+
+.gray-band{
+    background: $very-light-gray; 
+}
+
+section{
+    position: relative;
+    padding: $section-padding-mobile 0;
+    @include media-breakpoint-up(md) {
+        padding: $section-padding-desktop 0;    
+    }
+    .svg{
+        margin: 2em 0 0;
+        @include media-breakpoint-up(sm) {
+            margin: 0;
+        }
+    }
+    &.stitch-accent-left, &.stitch-accent-left-v2, &.stitch-accent-right, &.stitch-accent-right-v2{
+        &:before{
+            content: '';
+            position: absolute;
+            display: none;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 9;
+            @include media-breakpoint-up(md) {
+                display: block;    
+            }
+        } 
+    }
+    &.stitch-accent-left{
+        &:before{
+            background-image: url(images/stitch-accent-left.png);
+            left: 0;
+            bottom: -100px;
+            width: 310px;
+            height: 310px;
+        }
+    }
+    &.stitch-accent-left-v2{
+        &:before{
+            background-image: url(images/stitch-accent-left-v2.png);
+            position: absolute;
+            left: 0;
+            bottom: -200px;
+            width: 300px;
+            height: 250px;
+        }
+    }    
+    &.stitch-accent-right{
+        &:before{
+            background-image: url(images/stitch-accent-right.png);
+            right: 0;
+            bottom: -215px;
+            width: 250px;
+            height: 250px;
+        }
+    }
+    &.stitch-accent-right-v2{
+        &:before{
+            background-image: url(images/stitch-accent-right-v2.png);
+            position: absolute;
+            right: 0;
+            bottom: -215px;
+            width: 350px;
+            height: 350px;
+        }
+    }
+}
+
+.offset-hero{
+    padding-top: 4.5em; 
+}
+
+img{
+    max-width: 100%;
+    &.img-right{
+        margin-bottom: 1.5em;
+        @include media-breakpoint-up(lg) {
+            float: right;
+            max-width: 400px;
+            margin: 0.4em 0 0.5em 1.5em;
+        }
+    }
+    &.img-left{
+        margin-bottom: 1.5em;
+        @include media-breakpoint-up(lg) {
+            float: left;
+            max-width: 350px;
+            margin: 0.4em 1.5em 0.5em 0;
+        }
+    }
+}
+
+.custom-list{
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+    li{
+        position: relative;
+        padding: 0.7em 0 0 1.5em;
+        &::before{
+            content: '';
+            width: 14px; 
+            height: 14px;
+            border-radius: 50%;
+            border: 4px solid $brand-color2;
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 18px;
+        }
+    }
+}

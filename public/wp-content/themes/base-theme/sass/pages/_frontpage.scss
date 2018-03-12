@@ -1,0 +1,20 @@
+#welcome{
+    h2{
+        margin-top: 2em;
+        @include media-breakpoint-up(lg) { 
+            
+        }
+    }
+    background-repeat: no-repeat;
+    background-size: 500px;
+    @include media-breakpoint-up(lg) {
+        background-position: 120% 150%; 
+        background-image: url(images/curiosity-breeds-creativity-bg.svg);
+    }
+    @include media-breakpoint-up(xl) {
+        background-position: 105% 150%;    
+    }    
+    @include media-breakpoint-up(xxl) {
+        background-position: 95% 150%;    
+    }
+}

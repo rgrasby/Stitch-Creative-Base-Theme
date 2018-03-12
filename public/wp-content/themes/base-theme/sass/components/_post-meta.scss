@@ -1,0 +1,42 @@
+.post-meta{
+    padding: 0;
+    ul{
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        li{
+            display: inline-block;
+        }
+    }
+    > ul{
+        > li{
+            position: relative;
+            margin-right: 2em;
+            &::after{
+                content: '';
+                width: 4px;
+                height: 4px;
+                background: $brand-color3;
+                border-radius: 50%;
+                position: absolute;
+                right: -1.3em;
+                top: 50%;
+                margin-top: -2px;
+            }
+            &:last-of-type{
+                margin-right: 0;
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+#post-meta-top{
+    padding: 0.5em 1em;
+    text-align: center;
+    background: $very-light-gray;
+}
