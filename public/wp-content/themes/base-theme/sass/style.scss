@@ -1,0 +1,35 @@
+/*!
+Theme Name: Stitch Creative
+Author: Ryan, Jenna, Alexandra
+Description: Base Theme 
+Version: 0.0.1
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,500,700,700i');
+
+
+// Bootstrap Grid only
+@import "vendors/bootstrap/grid";
+@import "vendors/hamburgers/hamburgers";
+
+// Stitch Creative theme
+@import 'utilities/variables'; 
+@import 'utilities/helpers';
+@import 'utilities/mixins';
+
+@import 'components/icons';
+@import 'components/buttons';
+@import 'components/hero';
+@import 'components/testimonials';
+@import 'components/post-meta';
+@import 'components/carousel';
+
+@import 'base/base'; 
+@import 'base/typography'; 
+
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+
+
+@import 'pages/error404'; /* 404 */

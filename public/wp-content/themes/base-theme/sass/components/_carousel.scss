@@ -1,0 +1,28 @@
+.owl-nav {
+    height: 0;
+    .owl-prev,
+    .owl-next {
+        background: rgba($brand-color3, 0.8);
+        transition: all 0.2s ease-in;
+        position: absolute;
+        top: 50%;
+        margin-top: -30px;
+        border: 0;  
+        outline: 0;
+        svg{
+            fill: white;
+            width: 15px;
+            height: 15px;
+            position: relative;
+            top: 3px;
+        }
+    }
+    .owl-prev{
+        left: 0;
+        padding: 1.1em 0.5em 1.1em 0.4em;        
+    }
+    .owl-next {
+        right: 0;
+        padding: 1.1em 0.4em 1.1em 0.5em;
+    }
+}

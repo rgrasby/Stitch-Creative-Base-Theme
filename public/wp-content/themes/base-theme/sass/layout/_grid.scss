@@ -1,0 +1,19 @@
+ @include media-breakpoint-up(md) {
+    .pr-md-3{
+        padding-right: 3em;
+    }
+
+    .pl-md-3{
+        padding-left: 3em;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .pr-lg-3{
+        padding-right: 3em;
+    }
+
+    .pl-lg-3{
+        padding-left: 3em;
+    }
+}

@@ -1,0 +1,21 @@
+.site-footer{
+    background: $brand-color4;
+    padding: 0.8em 0;
+    position: relative;
+    #copyright{
+        margin: 0;
+        color: white;
+        font-size: .8em;
+        text-align: center;
+    }
+    .footer-accent{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 275px;
+        display: none;
+        @include media-breakpoint-up(md) {
+            display: block;    
+        }
+    }
+}
